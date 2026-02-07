@@ -1,0 +1,5 @@
+{
+  "model_version": "2026-02-07_iris_lr_v1",
+  "features": ["sepal_length", "sepal_width", "petal_length", "petal_width"],
+  "classes": [0, 1, 2]
+}
