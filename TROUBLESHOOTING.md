@@ -31,7 +31,7 @@ CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "
 
 Rebuild:
 ```bash
-docker build --no-cache -t iris-api .
+docker build --no-cache -t ml-model-api-fastapi-docker .
 ```
 
 ---
@@ -49,12 +49,12 @@ uvicorn[standard]
 
 Rebuild:
 ```bash
-docker build --no-cache -t iris-api .
+docker build --no-cache -t ml-model-api-fastapi-docker .
 ```
 
 Verify:
 ```bash
-docker run --rm iris-api python -c "import uvicorn; print(uvicorn.__version__)"
+docker run --rm ml-model-api-fastapi-docker python -c "import uvicorn; print(uvicorn.__version__)"
 ```
 
 ---
@@ -67,7 +67,7 @@ docker run --rm iris-api python -c "import uvicorn; print(uvicorn.__version__)"
 **Fix**
 Run on a different host port:
 ```bash
-docker run --rm -p 8001:8000 iris-api
+docker run --rm -p 8001:8000 ml-model-api-fastapi-docker
 ```
 
 Access API:

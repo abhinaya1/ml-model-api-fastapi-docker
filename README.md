@@ -15,7 +15,7 @@ This project demonstrates:
 ## Project Structure
 
 ```
-iris_api/
+ml-model-api-fastapi-docker/
 ├── app/
 │   ├── main.py          # FastAPI app and routes
 │   ├── schemas.py       # Request/response schemas
@@ -67,12 +67,12 @@ Open API documentation:
 
 ### Build the image
 ```bash
-docker build -t iris-api .
+docker build -t ml-model-api-fastapi-docker .
 ```
 
 ### Run the container
 ```bash
-docker run --rm -p 8000:8000 iris-api
+docker run --rm -p 8000:8000 ml-model-api-fastapi-docker
 ```
 
 Open API documentation:
@@ -80,7 +80,7 @@ Open API documentation:
 
 If port 8000 is already in use:
 ```bash
-docker run --rm -p 8001:8000 iris-api
+docker run --rm -p 8001:8000 ml-model-api-fastapi-docker
 ```
 
 ---
