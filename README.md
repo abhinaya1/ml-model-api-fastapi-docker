@@ -15,18 +15,20 @@ This project demonstrates:
 ## Project Structure
 
 ```
-ml-model-api-fastapi-docker/
-├── app/
-│   ├── main.py          # FastAPI app and routes
-│   ├── schemas.py       # Request/response schemas
-│   └── model.py         # Model + metadata loader
-├── model/
-│   ├── model.joblib     # Trained ML pipeline
-│   └── metadata.json    # Model metadata (version, features)
-├── requirements.txt
-├── Dockerfile
-├── .dockerignore
+ml-model-api-fastapi-docker
 ├── README.md
+├── serving
+│   ├── app
+│   │   ├── main.py           # FastAPI app and routes
+│   │   ├── model.py          # Request/response schemas
+│   │   └── schemas.py        # Model + metadata loader
+│   ├── Dockerfile        
+│   ├── model
+│   │   ├── metadata.json
+│   │   └── model.joblib      # Trained ML pipeline
+│   └── requirements.txt      # Model metadata (version, features)
+├── training
+│   └── train.py
 └── TROUBLESHOOTING.md
 ```
 
